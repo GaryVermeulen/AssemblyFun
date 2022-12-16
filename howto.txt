@@ -1,0 +1,8 @@
+nasm -f elf64 hello.asm # assemble the program  
+ld -s -o hello hello.o # link the object file nasm produced into an executable file  
+./hello # hello is an executable file
+
+
+yasm -g dwarf2 -f elf64 hello.asm -l hello.lst
+ld -g -o hello hello.o # -g is used to inform the linker to include debugging information in the final executable file
+
