@@ -1,9 +1,0 @@
-NASM Notes:
-
-nasm -f win32 hello.asm
-
-gcc hello.obj
-
-a
-
-
