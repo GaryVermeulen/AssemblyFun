@@ -1,0 +1,19 @@
+NASM Notes:
+
+nasm -f win32 hello.asm
+
+gcc hello.obj
+
+OR
+
+golink myprog.obj user32.dll kernel32.dll
+
+a.exe
+
+
+
+OR
+
+
+
+nasm -f win32 msgbox.asm && golink msgbox.obj user32.dll kernel32.dll && msgbox
